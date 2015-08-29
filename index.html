@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese Hirigana Practice</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/bower_components/paper-button/paper-button.html">
+    <link rel="import" href="/bower_components/paper-input/paper-input.html">
+    <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+
+    <script src="/node_modules/traceur/bin/traceur-runtime.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script>
+        System.defaultJSExtensions = true;
+        System.config({
+            paths: {
+                'angular2/*': '/node_modules/angular2/*',
+                'components/*': '/dist/components/*'
+            },
+            map: {
+                rx: '/node_modules/rx/dist/rx.js'
+            }
+        });
+        System.import('/dist/app');
+    </script>
+</head>
+<body>
+
+<paper-tolbar class="main-nav">
+    <paper-icon-button icon="menu"></paper-icon-button>
+</paper-tolbar>
+
+<jph-main-view></jph-main-view>
+
+</body>
+</html>
