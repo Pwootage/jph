@@ -9,7 +9,10 @@
     <link rel="import" href="/bower_components/paper-button/paper-button.html">
     <link rel="import" href="/bower_components/paper-input/paper-input.html">
     <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="/bower_components/paper-tooltip/paper-tooltip.html">
+    <link rel="import" href="/bower_components/paper-material/paper-material.html">
     <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/bower_components/paper-card/paper-card.html">
 
     <script src="/node_modules/traceur/bin/traceur-runtime.js"></script>
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
@@ -20,7 +23,8 @@
         System.config({
             paths: {
                 'angular2/*': '/node_modules/angular2/*',
-                'components/*': '/dist/components/*'
+                'components/*': '/dist/components/*',
+                'data/*': '/dist/data/*'
             },
             map: {
                 rx: '/node_modules/rx/dist/rx.js'

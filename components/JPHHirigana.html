@@ -1,0 +1,14 @@
+<div class="input">
+    <paper-input (^keyup)="processInput(userinput)" (^keydown)="processInput(userinput)" #userinput></paper-input>
+</div>
+<div class="hirigana-queue">
+    <paper-material *ng-for="#char of chars" class="char-card">
+        <div>
+            {{char.kana}}
+        </div>
+        <paper-tooltip [animationConfig]="animationConfig"><span>{{char.romaji}}</span></paper-tooltip>
+    </paper-material>
+</div>
+<div class="hirigana-table">
+    <jph-hirigana-table></jph-hirigana-table>
+</div>

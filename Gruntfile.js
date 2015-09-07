@@ -13,18 +13,29 @@ module.exports = function(grunt) {
         dest: ["dist/"]
       }
     },
+    less: {
+      main: {
+        src: "main.less",
+        dest: "main.css"
+      }
+    },
     watch: {
       ts: {
         files: ["**/*.ts"],
         tasks: "ts"
+      },
+      less: {
+        files: ["**/*.less"],
+        tasks: "less"
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-ts');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['ts']);
+  grunt.registerTask('default', ['ts', 'less']);
 
 };

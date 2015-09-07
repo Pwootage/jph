@@ -4,5 +4,6 @@
 import {bootstrap} from "angular2/angular2"
 
 import {JPHMainViewComponent} from "components/JPHMainView"
+import {JPHHiriganaComponent} from "components/JPHHirigana"
 
 bootstrap(JPHMainViewComponent);
