@@ -30,6 +30,23 @@ jph-hirigana jph-hirigana-table {
   display: inline-flex;
   flex-direction: row;
 }
+jph-hirigana .what-to-do-inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+jph-hirigana .what-to-do-inp paper-textarea {
+  width: 100%;
+}
+jph-hirigana .what-to-do-inp .enabled-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .char-table {
   border-collapse: collapse;
 }

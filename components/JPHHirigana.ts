@@ -2,8 +2,10 @@
 /// <reference path="../typings/angular2/angular2.d.ts"/> ///ts:ref:generated
 ///ts:ref=jp-chars.ts
 /// <reference path="../data/jp-chars.ts"/> ///ts:ref:generated
+///ts:ref=rx.d.ts
+/// <reference path="../typings/rx/rx.d.ts"/> ///ts:ref:generated
 
-import {Component, View, bootstrap, NgFor} from "angular2/angular2"
+import {Component, View, bootstrap, NgFor, NgModel} from "angular2/angular2"
 import {JPChars} from "data/jp-chars"
 import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
 
@@ -16,6 +18,9 @@ import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
 })
 export class JPHHiriganaComponent {
     chars:Array<JPChars.JPChar> = [];
+    enabledCharsInput:string;
+    enabledChars:Array<JPChars.JPChar> = [];
+
     animationConfig = {
         entry: [{
             name: "fade-in-animation",
@@ -31,6 +36,7 @@ export class JPHHiriganaComponent {
     };
 
     constructor() {
+        this.updateChars({value: localStorage['enabledChars'] || ''});
         this.fillArray();
     }
 
@@ -39,17 +45,37 @@ export class JPHHiriganaComponent {
             var char;
             do {
                 char = JPChars.Hirigana.random()
-            } while (this.chars.length > 0 && char.kana == this.chars[this.chars.length - 1].kana);
+            } while (!this.charEnabled(char) || (this.chars.length > 0 && (char.kana == this.chars[this.chars.length - 1].kana)));
             this.chars.push(char);
         }
     }
 
     public processInput(inp) {
         var val = inp.value || '';
-        if (val.indexOf(this.chars[0].k) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
+        if (val.indexOf(this.chars[0].kana) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
             inp.value = '';
             this.chars = this.chars.slice(1);
             this.fillArray();
+        }
+    }
+
+    public updateChars(inp) {
+        var value = inp.value || '';
+        if (value.length == 0) value = localStorage['enabledChars'] || '';
+        this.enabledChars = JPChars.All.chars.filter((char: JPChars.JPChar) =>
+            value.indexOf(char.kana) >= 0 || value.indexOf(char.romaji) >= 0
+        );
+        this.chars = [];
+        this.fillArray();
+        this.enabledCharsInput = this.enabledChars.map(c => c.kana).reduce((a, b) => a + b, '');
+        localStorage['enabledChars'] = this.enabledCharsInput;
+    }
+
+    private charEnabled(char:JPChars.JPChar) {
+        if (this.enabledChars.length < 2) {
+            return true;
+        } else {
+            return this.enabledChars.filter(c => c.kana == char.kana).length > 0;
         }
     }
 }
