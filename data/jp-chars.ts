@@ -22,36 +22,54 @@ export module JPChars {
             {romaji: "ku", kana: "く"},
             {romaji: "ke", kana: "け"},
             {romaji: "ko", kana: "こ"},
+            {romaji: "kya", kana: "きゃ"},
+            {romaji: "kyu", kana: "きゅ"},
+            {romaji: "kyo", kana: "きょ"},
             //s
             {romaji: "sa", kana: "さ"},
             {romaji: "shi", kana: "し"},
             {romaji: "su", kana: "す"},
             {romaji: "se", kana: "せ"},
             {romaji: "so", kana: "そ"},
+            {romaji: "sha", kana: "しゃ"},
+            {romaji: "shu", kana: "しゅ"},
+            {romaji: "sho", kana: "しお"},
             //t
             {romaji: "ta", kana: "た"},
             {romaji: "chi", kana: "ち"},
             {romaji: "tsu", kana: "つ"},
             {romaji: "te", kana: "て"},
             {romaji: "to", kana: "と"},
+            {romaji: "cha", kana: "ちゃ"},
+            {romaji: "chi", kana: "ちゅ"},
+            {romaji: "cho", kana: "ちょ"},
             //n
             {romaji: "na", kana: "な"},
             {romaji: "ni", kana: "に"},
             {romaji: "nu", kana: "ぬ"},
             {romaji: "ne", kana: "ね"},
             {romaji: "no", kana: "の"},
+            {romaji: "nya", kana: "にゃ"},
+            {romaji: "nyu", kana: "にゅ"},
+            {romaji: "nyo", kana: "にょ"},
             //h
             {romaji: "ha", kana: "は"},
             {romaji: "hi", kana: "ひ"},
             {romaji: "fu", kana: "ふ"},
             {romaji: "he", kana: "へ"},
             {romaji: "ho", kana: "ほ"},
+            {romaji: "hya", kana: "ひゃ"},
+            {romaji: "hyu", kana: "ひゅ"},
+            {romaji: "hyo", kana: "ひょ"},
             //m
             {romaji: "ma", kana: "ま"},
             {romaji: "mi", kana: "み"},
             {romaji: "mu", kana: "む"},
             {romaji: "me", kana: "ね"},
             {romaji: "mo", kana: "も"},
+            {romaji: "mya", kana: "みゃ"},
+            {romaji: "myu", kana: "みゅ"},
+            {romaji: "myo", kana: "みょ"},
             //y
             {romaji: "ya", kana: "や"},
             {romaji: "yu", kana: "ゆ"},
@@ -62,11 +80,32 @@ export module JPChars {
             {romaji: "ru", kana: "る"},
             {romaji: "re", kana: "れ"},
             {romaji: "ro", kana: "ろ"},
+            {romaji: "rya", kana: "りゃ"},
+            {romaji: "ryu", kana: "りゅ"},
+            {romaji: "ryo", kana: "りょ"},
             //w
             {romaji: "wa", kana: "わ"},
             {romaji: "wo", kana: "を"},
             //n
-            {romaji: "n", kana: "ん"}
+            {romaji: "n", kana: "ん"},
+            //g
+            {romaji: "ga", kana: "が"},
+            {romaji: "gi", kana: "ぎ"},
+            {romaji: "gu", kana: "ぐ"},
+            {romaji: "ge", kana: "げ"},
+            {romaji: "go", kana: "ご"},
+            //z
+            {romaji: "za", kana: "ざ"},
+            {romaji: "ji", kana: "じ"},
+            {romaji: "zu", kana: "ず"},
+            {romaji: "ze", kana: "ぜ"},
+            {romaji: "zo", kana: "ぞ"},
+            //d
+            {romaji: "da", kana: "だ"},
+            {romaji: "dzu", kana: "づ"},
+            {romaji: "du", kana: "づ"},
+            {romaji: "de", kana: "で"},
+            {romaji: "do", kana: "ど"},
         ]
     }
     export class All {
