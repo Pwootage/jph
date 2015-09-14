@@ -4,12 +4,12 @@ export module JPChars {
         kana: string;
     }
     export class Hirigana {
-        public static random(): JPChar {
+        public static random():JPChar {
             var i = Math.floor(Math.random() * Hirigana.chars.length);
             return Hirigana.chars[i];
         }
 
-        public static chars: JPChar[] = [
+        public static chars:JPChar[] = [
             //vowels
             {romaji: "a", kana: "あ"},
             {romaji: "i", kana: "い"},
@@ -133,6 +133,6 @@ export module JPChars {
         ]
     }
     export class All {
-        public static chars: JPChar[] = Hirigana.chars;
+        public static chars:JPChar[] = Hirigana.chars;
     }
 }
