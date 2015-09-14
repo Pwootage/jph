@@ -94,18 +94,42 @@ export module JPChars {
             {romaji: "gu", kana: "ぐ"},
             {romaji: "ge", kana: "げ"},
             {romaji: "go", kana: "ご"},
+            {romaji: "gya", kana: "ぎゃ"},
+            {romaji: "gyu", kana: "ぎゅ"},
+            {romaji: "gyo", kana: "ぎょ"},
             //z
             {romaji: "za", kana: "ざ"},
             {romaji: "ji", kana: "じ"},
             {romaji: "zu", kana: "ず"},
             {romaji: "ze", kana: "ぜ"},
             {romaji: "zo", kana: "ぞ"},
+            {romaji: "ja", kana: "じゃ"},
+            {romaji: "ju", kana: "じゅ"},
+            {romaji: "yo", kana: "じょ"},
             //d
             {romaji: "da", kana: "だ"},
             {romaji: "dzu", kana: "づ"},
             {romaji: "du", kana: "づ"},
             {romaji: "de", kana: "で"},
             {romaji: "do", kana: "ど"},
+            //b
+            {romaji: "ba", kana: "ば"},
+            {romaji: "bi", kana: "び"},
+            {romaji: "bu", kana: "ぶ"},
+            {romaji: "be", kana: "べ"},
+            {romaji: "bo", kana: "ぼ"},
+            {romaji: "bya", kana: "びゃ"},
+            {romaji: "byu", kana: "びゅ"},
+            {romaji: "byo", kana: "びょ"},
+            //p
+            {romaji: "pa", kana: "ぱ"},
+            {romaji: "pi", kana: "ぴ"},
+            {romaji: "pu", kana: "ぷ"},
+            {romaji: "pe", kana: "ぺ"},
+            {romaji: "po", kana: "ぽ"},
+            {romaji: "pya", kana: "ぴゃ"},
+            {romaji: "pyu", kana: "ぴゅ"},
+            {romaji: "pyo", kana: "ぴょ"},
         ]
     }
     export class All {
