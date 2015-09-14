@@ -47,6 +47,11 @@ jph-hirigana .what-to-do-inp .enabled-row {
   align-items: center;
   width: 100%;
 }
+jph-hirigana .what-to-do-inp .words {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .char-table {
   border-collapse: collapse;
 }

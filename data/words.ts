@@ -332,7 +332,7 @@ export module JPWords {
                 romaji: "yubi"
             },
             {
-                kana: "",
+                kana: "がつ",
                 kanji: "",
                 meaning: "",
                 romaji: "# -gatsu / (January,1st Month): Ichi-,Ni-,San-,Shi-,Go-,Roku-,Shichi-,Hachi-,Ku-,Jyu-,JyuIchi-,JyuNi- (December,12th Month"
@@ -343,12 +343,12 @@ export module JPWords {
                 meaning: "buttocks",
                 romaji: "shiri"
             },
-            {
-                kana: "",
-                kanji: "",
-                meaning: "",
-                romaji: "Last Year: Kyounen, This Year: Kotoshi, Next Year: Rainen"
-            },
+            //{
+            //    kana: "",
+            //    kanji: "",
+            //    meaning: "",
+            //    romaji: "Last Year: Kyounen, This Year: Kotoshi, Next Year: Rainen"
+            //},
             {
                 kana: "おなか",
                 kanji: "お腹",
@@ -361,12 +361,12 @@ export module JPWords {
                 meaning: "liver",
                 romaji: "kanzō"
             },
-            {
-                kana: "",
-                kanji: "",
-                meaning: "",
-                romaji: "Yesterday Morning: Kinou no asa, This Morning: Kesa, Tomorrow Morning: Ashita no asa"
-            },
+            //{
+            //    kana: "",
+            //    kanji: "",
+            //    meaning: "",
+            //    romaji: "Yesterday Morning: Kinou no asa, This Morning: Kesa, Tomorrow Morning: Ashita no asa"
+            //},
             {
                 kana: "きも",
                 kanji: "肝",
@@ -385,12 +385,12 @@ export module JPWords {
                 meaning: "neck",
                 romaji: "kubi"
             },
-            {
-                kana: "",
-                kanji: "",
-                meaning: "",
-                romaji: "Last Week: Senshyu, This Week: Konshyu, Next Week: Raishyu"
-            },
+            //{
+            //    kana: "",
+            //    kanji: "",
+            //    meaning: "",
+            //    romaji: "Last Week: Senshyu, This Week: Konshyu, Next Week: Raishyu"
+            //},
             {
                 kana: "こころ",
                 kanji: "心",

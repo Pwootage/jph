@@ -4,9 +4,12 @@
 /// <reference path="../data/jp-chars.ts"/> ///ts:ref:generated
 ///ts:ref=rx.d.ts
 /// <reference path="../typings/rx/rx.d.ts"/> ///ts:ref:generated
+///ts:ref=words.ts
+/// <reference path="../data/words.ts"/> ///ts:ref:generated
 
 import {Component, View, bootstrap, NgFor, NgModel} from "angular2/angular2"
 import {JPChars} from "data/jp-chars"
+import {JPWords} from "data/words"
 import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
 
 @Component({
@@ -17,7 +20,8 @@ import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
     directives: [NgFor, JPHHiriganaTableComponent]
 })
 export class JPHHiriganaComponent {
-    chars:Array<JPChars.JPChar> = [];
+    chars:JPChars.JPChar[] = [];
+    words:JPWords.JPWord[] = [];
     enabledCharsInput:string;
     enabledChars:Array<JPChars.JPChar> = [];
 
@@ -69,6 +73,11 @@ export class JPHHiriganaComponent {
         this.fillArray();
         this.enabledCharsInput = this.enabledChars.map(c => c.kana).reduce((a, b) => a + b, '');
         localStorage['enabledChars'] = this.enabledCharsInput;
+        this.words = JPWords.Words.words.filter(v => {
+            return v.kana.split('')
+                .map(char => this.enabledCharsInput.indexOf(char) >= 0)
+                .reduce((a, b) => a && b, true)
+        });
     }
 
     private charEnabled(char:JPChars.JPChar) {
