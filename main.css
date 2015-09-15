@@ -16,13 +16,53 @@ jph-hirigana {
   justify-content: center;
   align-items: center;
 }
-jph-hirigana .hirigana-queue {
-  display: inline-flex;
+jph-hirigana .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-jph-hirigana .hirigana-queue .char-card {
+jph-hirigana .input .toggle-wrapper {
+  display: flex;
+  padding: 12px;
+}
+jph-hirigana .input .toggle-wrapper paper-toggle-button {
+  margin-right: 6px;
+}
+jph-hirigana .input .toggle-wrapper div {
+  padding-bottom: 2px;
+}
+jph-hirigana .word-queue {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+jph-hirigana .word-queue .word {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+jph-hirigana .word-queue .word-card {
+  display: block;
+  margin: 2px;
+}
+jph-hirigana .word-queue .word-card div {
+  margin: 2px;
+}
+jph-hirigana .word-queue .word-card div .kana {
+  font-size: 200%;
+}
+jph-hirigana .kana-queue {
+  display: flex;
+}
+jph-hirigana .kana-queue .char-card {
+  margin: 2px;
   display: block;
 }
-jph-hirigana .hirigana-queue .char-card div {
+jph-hirigana .kana-queue .char-card div {
   font-size: 200%;
   margin: 2px;
 }

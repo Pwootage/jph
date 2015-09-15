@@ -4080,25 +4080,25 @@ export module JPWords {
                 kanji: "",
                 meaning: "topic marker",
                 romaji: "wa/ha"
-            },
-            {
-                kana: "う",
-                kanji: "よう",
-                meaning: "volitional ending [う for u-verbs, よう for ru-verbs]: \"Let's…\" or \"I will\"",
-                romaji: "u/ru/yō"
-            },
-            {
-                kana: "せる/させる",
-                kanji: "",
-                meaning: "causative ending [せる for u-verbs, させる for ru-verbs]: to make [someone do something], to allow",
-                romaji: "u/ru/seru/saseru"
-            },
-            {
-                kana: "れる/られる",
-                kanji: "",
-                meaning: "passive verb ending [れる for u-verbs, られる for ru-verbs]: to be <verbed> [e.g., 食べられる, \"to be eaten\"]",
-                romaji: "u/ru/reru/rareru"
             }
+            //{
+            //    kana: "う",
+            //    kanji: "よう",
+            //    meaning: "volitional ending [う for u-verbs, よう for ru-verbs]: \"Let's…\" or \"I will\"",
+            //    romaji: "u/ru/yō"
+            //},
+            //{
+            //    kana: "せる/させる",
+            //    kanji: "",
+            //    meaning: "causative ending [せる for u-verbs, させる for ru-verbs]: to make [someone do something], to allow",
+            //    romaji: "u/ru/seru/saseru"
+            //},
+            //{
+            //    kana: "れる/られる",
+            //    kanji: "",
+            //    meaning: "passive verb ending [れる for u-verbs, られる for ru-verbs]: to be <verbed> [e.g., 食べられる, \"to be eaten\"]",
+            //    romaji: "u/ru/reru/rareru"
+            //}
         ];
     }
 }

@@ -22,8 +22,10 @@ import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
 export class JPHHiriganaComponent {
     chars:JPChars.JPChar[] = [];
     words:JPWords.JPWord[] = [];
+    enabledWords:JPWords.JPWord[] = [];
     enabledCharsInput:string;
     enabledChars:Array<JPChars.JPChar> = [];
+    showWords: boolean = false;
 
     animationConfig = {
         entry: [{
@@ -41,10 +43,10 @@ export class JPHHiriganaComponent {
 
     constructor() {
         this.updateChars({value: localStorage['enabledChars'] || ''});
-        this.fillArray();
+        this.fillArrays();
     }
 
-    public fillArray() {
+    public fillArrays() {
         while (this.chars.length < 10) {
             var char;
             do {
@@ -52,14 +54,28 @@ export class JPHHiriganaComponent {
             } while (!this.charEnabled(char) || (this.chars.length > 0 && (char.kana == this.chars[this.chars.length - 1].kana)));
             this.chars.push(char);
         }
+
+        while (this.words.length < 10) {
+            var word;
+            do {
+                var i = Math.floor(Math.random() * this.enabledWords.length);
+                word = this.enabledWords[i];
+            } while (this.words.length > 0 && (word.kana == this.words[this.words.length - 1].kana));
+            this.words.push(word);
+        }
     }
 
     public processInput(inp) {
         var val = inp.value || '';
-        if (val.indexOf(this.chars[0].kana) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
+        if (!this.showWords && val.indexOf(this.chars[0].kana) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
             inp.value = '';
             this.chars = this.chars.slice(1);
-            this.fillArray();
+            this.fillArrays();
+        }
+        if (this.showWords && val.indexOf(this.words[0].kana) >= 0 || val.indexOf(this.words[0].romaji) >= 0) {
+            inp.value = '';
+            this.words = this.words.slice(1);
+            this.fillArrays();
         }
     }
 
@@ -69,15 +85,16 @@ export class JPHHiriganaComponent {
         this.enabledChars = JPChars.All.chars.filter((char: JPChars.JPChar) =>
             value.indexOf(char.kana) >= 0 || value.indexOf(char.romaji) >= 0
         );
-        this.chars = [];
-        this.fillArray();
         this.enabledCharsInput = this.enabledChars.map(c => c.kana).reduce((a, b) => a + b, '');
         localStorage['enabledChars'] = this.enabledCharsInput;
-        this.words = JPWords.Words.words.filter(v => {
+        this.enabledWords = JPWords.Words.words.filter(v => {
             return v.kana.split('')
                 .map(char => this.enabledCharsInput.indexOf(char) >= 0)
                 .reduce((a, b) => a && b, true)
         });
+        this.chars = [];
+        this.words = [];
+        this.fillArrays();
     }
 
     private charEnabled(char:JPChars.JPChar) {
@@ -86,5 +103,9 @@ export class JPHHiriganaComponent {
         } else {
             return this.enabledChars.filter(c => c.kana == char.kana).length > 0;
         }
+    }
+
+    private updateWordsOrChars(inp) {
+        this.showWords = inp.checked;
     }
 }

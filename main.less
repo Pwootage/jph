@@ -20,10 +20,51 @@ jph-hirigana {
   justify-content: center;
   align-items: center;
 
-  .hirigana-queue {
-    display: inline-flex;
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .toggle-wrapper {
+      paper-toggle-button {
+        margin-right: 6px;
+      }
+      div {
+        padding-bottom: 2px;
+      }
+      display: flex;
+      padding: 12px;
+    }
+  }
 
+  .word-queue {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .word {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .word-card {
+      display: block;
+      margin: 2px;
+      div {
+        .kana {
+          font-size: 200%;
+        }
+        margin: 2px;
+      }
+    }
+  }
+
+  .kana-queue {
+    display: flex;
     .char-card {
+      margin: 2px;
       display: block;
       div {
         font-size: 200%;

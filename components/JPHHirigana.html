@@ -1,13 +1,34 @@
 <div class="input">
     <paper-input (^keyup)="processInput(userinput)" (^keydown)="processInput(userinput)" #userinput></paper-input>
+    <div class="toggle-wrapper">
+        <paper-toggle-button (^change)="updateWordsOrChars(wordtoggle)" #wordtoggle></paper-toggle-button>
+        <div [hidden]="showWords">Kana</div>
+        <div [hidden]="!showWords">Words</div>
+    </div>
 </div>
-<div class="hirigana-queue">
+<div class="kana-queue" [hidden]="showWords">
     <paper-material *ng-for="#char of chars" class="char-card">
         <div>
             {{char.kana}}
         </div>
         <paper-tooltip [animationConfig]="animationConfig"><span>{{char.romaji}}</span></paper-tooltip>
     </paper-material>
+</div>
+<div class="word-queue" [hidden]="!showWords">
+    <div class="word" *ng-for="#word of words">
+        <paper-material class="word-card">
+            <div>
+                <span class="kana">{{word.kana}}</span>
+                <span class="desc">{{word.kanji}} - {{word.meaning}}</span>
+            </div>
+            <paper-tooltip [animationConfig]="animationConfig"><span>{{word.romaji}}</span></paper-tooltip>
+        </paper-material>
+        <paper-material class="desc-card">
+            <div>
+
+            </div>
+        </paper-material>
+    </div>
 </div>
 <div class="hirigana-table">
     <jph-hirigana-table></jph-hirigana-table>
@@ -19,6 +40,6 @@
         <div *ng-for="#char of enabledChars">{{char.kana}}</div>
     </div>
     <div class="words">
-        <div *ng-for="#word of words">{{word.kana}} - {{word.romaji}} - {{word.meaning}}</div>
+        <div *ng-for="#word of enabledWords">{{word.kana}} - {{word.romaji}} - {{word.meaning}}</div>
     </div>
 </div>
