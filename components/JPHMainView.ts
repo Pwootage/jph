@@ -8,7 +8,7 @@ import {JPHHiriganaComponent} from "components/JPHHirigana"
     selector: "jph-main-view"
 })
 @View({
-    templateUrl: "/components/JPHMainView.html",
+    templateUrl: "components/JPHMainView.html",
     directives: [JPHHiriganaComponent]
 })
 export class JPHMainViewComponent {

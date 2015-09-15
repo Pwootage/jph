@@ -9,7 +9,7 @@ import {Component, View, bootstrap, NgFor} from "angular2/angular2"
     selector: "jph-hirigana-table"
 })
 @View({
-    templateUrl: "/components/JPHHiriganaTable.html",
+    templateUrl: "components/JPHHiriganaTable.html",
     directives: [NgFor]
 })
 export class JPHHiriganaTableComponent {

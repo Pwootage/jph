@@ -16,7 +16,7 @@ import {JPHHiriganaTableComponent} from "components/JPHHiriganaTable"
     selector: "jph-hirigana"
 })
 @View({
-    templateUrl: "/components/JPHHirigana.html",
+    templateUrl: "components/JPHHirigana.html",
     directives: [NgFor, JPHHiriganaTableComponent]
 })
 export class JPHHiriganaComponent {
