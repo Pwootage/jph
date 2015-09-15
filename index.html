@@ -7,34 +7,34 @@
 
     <link rel="stylesheet" href="main.css">
 
-    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
-    <link rel="import" href="/bower_components/paper-button/paper-button.html">
-    <link rel="import" href="/bower_components/paper-input/paper-input.html">
-    <link rel="import" href="/bower_components/paper-input/paper-textarea.html">
-    <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
-    <link rel="import" href="/bower_components/paper-tooltip/paper-tooltip.html">
-    <link rel="import" href="/bower_components/paper-material/paper-material.html">
-    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="/bower_components/paper-card/paper-card.html">
-    <link rel="import" href="/bower_components/paper-toggle-button/paper-toggle-button.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/paper-input/paper-textarea.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="bower_components/paper-tooltip/paper-tooltip.html">
+    <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-toggle-button/paper-toggle-button.html">
 
-    <script src="/node_modules/traceur/bin/traceur-runtime.js"></script>
-    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="/node_modules/systemjs/dist/system.js"></script>
-    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script>
         System.defaultJSExtensions = true;
         System.config({
             paths: {
-                'angular2/*': '/node_modules/angular2/*',
-                'components/*': '/dist/components/*',
-                'data/*': '/dist/data/*'
+                'angular2/*': 'node_modules/angular2/*',
+                'components/*': 'dist/components/*',
+                'data/*': 'dist/data/*'
             },
             map: {
-                rx: '/node_modules/rx/dist/rx.js'
+                rx: 'node_modules/rx/dist/rx'
             }
         });
-        System.import('/dist/app');
+        System.import('dist/app');
     </script>
 </head>
 <body>
