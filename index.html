@@ -22,7 +22,16 @@
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
     <script>
+        //ga
+        window.ga = window.ga || function() {
+                    (ga.q = ga.q || []).push(arguments)
+                };
+        ga.l = +new Date;
+        ga('create', 'UA-53207226-2', 'auto');
+        ga('send', 'pageview');
+        //System bootstrap
         System.defaultJSExtensions = true;
         System.config({
             paths: {
@@ -46,4 +55,14 @@
 <jph-main-view></jph-main-view>
 
 </body>
+
+<div class="footer">
+    <div>
+        This website uses cookies and google analytics for basic usage information
+        (browser, session duration, OS) <a href="https://www.google.com/policies/privacy/partners/">learn more</a>
+    </div>
+    <div>
+        <a href="https://github.com/Pwootage/jph/issues">Bug reports, feature suggestions, pull requests</a>
+    </div>
+</div>
 </html>
