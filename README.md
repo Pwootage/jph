@@ -9,7 +9,11 @@ though)
 It is available at [pwootage.com/jph](https://pwootage.com/jph/) or is may be compiled and
 ran locally
 
-# Developing
+# Contributing
+
+Please keep the code style similar to the existing code style. Use types where reasonable in TypeScript,
+and if you modify the UI, use [polymer-paper](https://elements.polymer-project.org/browse?package=paper-elements)
+and stick to [material design](https://www.google.com/design/spec/material-design/introduction.html).
 
 ## Dependencies (installable with npm)
 * bower
