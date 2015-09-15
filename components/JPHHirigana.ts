@@ -25,7 +25,7 @@ export class JPHHiriganaComponent {
     enabledWords:JPWords.JPWord[] = [];
     enabledCharsInput:string;
     enabledChars:Array<JPChars.JPChar> = [];
-    showWords: boolean = false;
+    showWords:boolean = false;
 
     animationConfig = {
         entry: [{
@@ -67,22 +67,25 @@ export class JPHHiriganaComponent {
 
     public processInput(inp) {
         var val = inp.value || '';
-        if (!this.showWords && val.indexOf(this.chars[0].kana) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
-            inp.value = '';
-            this.chars = this.chars.slice(1);
-            this.fillArrays();
-        }
-        if (this.showWords && val.indexOf(this.words[0].kana) >= 0 || val.indexOf(this.words[0].romaji) >= 0) {
-            inp.value = '';
-            this.words = this.words.slice(1);
-            this.fillArrays();
+        if (this.showWords) {
+            if (val.indexOf(this.words[0].kana) >= 0 || val.indexOf(this.words[0].romaji) >= 0) {
+                inp.value = '';
+                this.words = this.words.slice(1);
+                this.fillArrays();
+            }
+        } else {
+            if (val.indexOf(this.chars[0].kana) >= 0 || val.indexOf(this.chars[0].romaji) >= 0) {
+                inp.value = '';
+                this.chars = this.chars.slice(1);
+                this.fillArrays();
+            }
         }
     }
 
     public updateChars(inp) {
         var value = inp.value || '';
         if (value.length == 0) value = localStorage['enabledChars'] || '';
-        this.enabledChars = JPChars.All.chars.filter((char: JPChars.JPChar) =>
+        this.enabledChars = JPChars.All.chars.filter((char:JPChars.JPChar) =>
             value.indexOf(char.kana) >= 0 || value.indexOf(char.romaji) >= 0
         );
         this.enabledCharsInput = this.enabledChars.map(c => c.kana).reduce((a, b) => a + b, '');

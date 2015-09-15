@@ -2783,13 +2783,13 @@ export module JPWords {
                 kana: "ああ",
                 kanji: "",
                 meaning: "Oh!, Ah!",
-                romaji: "ā"
+                romaji: "aa"
             },
             {
                 kana: "どう",
                 kanji: "",
                 meaning: "how",
-                romaji: "dō"
+                romaji: "du"
             },
             {
                 kana: "おもい",
