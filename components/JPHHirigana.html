@@ -1,7 +1,7 @@
 <div class="input">
-    <paper-input (^keyup)="processInput(userinput)" (^keydown)="processInput(userinput)" #userinput></paper-input>
+    <paper-input (input)="processInput(userinput)" #userinput></paper-input>
     <div class="toggle-wrapper">
-        <paper-toggle-button (^change)="updateWordsOrChars(wordtoggle)" #wordtoggle></paper-toggle-button>
+        <paper-toggle-button (change)="updateWordsOrChars(wordtoggle)" #wordtoggle></paper-toggle-button>
         <div [hidden]="showWords">Kana</div>
         <div [hidden]="!showWords">Words</div>
     </div>
@@ -34,7 +34,7 @@
     <jph-hirigana-table></jph-hirigana-table>
 </div>
 <div class="what-to-do-inp">
-    <paper-textarea label="Characters to show" (load)="updateChars(choicesbox)" (^input)="updateChars(choicesbox)"
+    <paper-textarea label="Characters to show" (load)="updateChars(choicesbox)" (input)="updateChars(choicesbox)"
                     [value]="enabledCharsInput" #choicesbox></paper-textarea>
     <div class="enabled-row">
         <div *ng-for="#char of enabledChars">{{char.kana}}</div>
