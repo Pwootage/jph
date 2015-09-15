@@ -15,13 +15,13 @@ Please keep the code style similar to the existing code style. Use types where r
 and if you modify the UI, use [polymer-paper](https://elements.polymer-project.org/browse?package=paper-elements)
 and stick to [material design](https://www.google.com/design/spec/material-design/introduction.html).
 
-## Dependencies (installable with npm)
+### Dependencies (installable with npm)
 * bower
 * tsd
 * grunt-cli
 * http-server *optional*
 
-## Useful commands
+### Useful commands
 * Install web dependencies: `npm install && bower install && tsd install`
 * Compile: `grunt`
 * Auto-compile changes: `grunt watch`
@@ -35,10 +35,10 @@ and is actually pretty messy (and likely not even completely correct).
 
 # Licence
 
-## Content/text: 
+### Content/text: 
 [Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## Software/Code:
+### Software/Code:
 ```
 The MIT License (MIT)
 
@@ -63,6 +63,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
+### Word List
 The word list is originally parsed from
 [Appendix:1000 Japanese basic words](https://en.wiktionary.org/wiki/Appendix:1000_Japanese_basic_words), licenced
 under [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/), and has been
