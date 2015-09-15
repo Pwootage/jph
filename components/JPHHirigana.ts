@@ -42,7 +42,7 @@ export class JPHHiriganaComponent {
     };
 
     constructor() {
-        this.updateChars({value: localStorage['enabledChars'] || ''});
+        this.updateChars({value: localStorage['enabledChars'] || 'あ'});
         this.fillArrays();
     }
 
@@ -55,7 +55,7 @@ export class JPHHiriganaComponent {
             this.chars.push(char);
         }
 
-        while (this.words.length < 10) {
+        while (this.enabledWords.length >= 2 && this.words.length < 10) {
             var word;
             do {
                 var i = Math.floor(Math.random() * this.enabledWords.length);
