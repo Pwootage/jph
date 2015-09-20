@@ -359,7 +359,7 @@ export module JPWords {
                 kana: "かんぞう",
                 kanji: "肝臓",
                 meaning: "liver",
-                romaji: "kanzō"
+                romaji: "kanzou"
             },
             //{
             //    kana: "",
@@ -407,7 +407,7 @@ export module JPWords {
                 kana: "しんぞう",
                 kanji: "心臓",
                 meaning: "heart",
-                romaji: "shinzō"
+                romaji: "shinzou"
             },
             {
                 kana: "せなか",
@@ -467,7 +467,7 @@ export module JPWords {
                 kana: "びょうき",
                 kanji: "病気",
                 meaning: "illness",
-                romaji: "byōki"
+                romaji: "byouki"
             },
             {
                 kana: "かぞく",
@@ -515,19 +515,19 @@ export module JPWords {
                 kana: "おとうと",
                 kanji: "弟",
                 meaning: "younger brother",
-                romaji: "otōto"
+                romaji: "otouto"
             },
             {
                 kana: "いもうと",
                 kanji: "妹",
                 meaning: "younger sister",
-                romaji: "imōto"
+                romaji: "imouto"
             },
             {
                 kana: "きょうだい",
                 kanji: "兄弟",
                 meaning: "brothers, siblings",
-                romaji: "kyōdai"
+                romaji: "kyoudai"
             },
             {
                 kana: "しまい",
@@ -599,7 +599,7 @@ export module JPWords {
                 kana: "どうぶつ",
                 kanji: "動物",
                 meaning: "animal",
-                romaji: "dōbutsu"
+                romaji: "doubutsu"
             },
             {
                 kana: "いぬ",
@@ -671,7 +671,7 @@ export module JPWords {
                 kana: "オオカミ",
                 kanji: "狼",
                 meaning: "wolf",
-                romaji: "ōokami"
+                romaji: "ookami"
             },
             {
                 kana: "うさぎ",
@@ -713,7 +713,7 @@ export module JPWords {
                 kana: "ぞう",
                 kanji: "象",
                 meaning: "elephant",
-                romaji: "zō"
+                romaji: "zou"
             },
             {
                 kana: "とり",
@@ -827,7 +827,7 @@ export module JPWords {
                 kana: "ちょう",
                 kanji: "蝶",
                 meaning: "butterfly",
-                romaji: "chō"
+                romaji: "tyou"
             },
             {
                 kana: "ガ",
@@ -841,11 +841,11 @@ export module JPWords {
                 meaning: "cicada",
                 romaji: "semi"
             },
-            {
+            { //todo
                 kana: "りゅう",
                 kanji: "たつ",
                 meaning: "dragon",
-                romaji: "ryū/tatsu"
+                romaji: "ryuu/tatsu"
             },
             {
                 kana: "トンボ",
@@ -1151,7 +1151,7 @@ export module JPWords {
                 kana: "りょうり",
                 kanji: "料理",
                 meaning: "cooking",
-                romaji: "ryōri"
+                romaji: "ryouri"
             },
             {
                 kana: "そこ",
@@ -1193,19 +1193,19 @@ export module JPWords {
                 kana: "コーヒー",
                 kanji: "珈琲",
                 meaning: "coffee",
-                romaji: "kōhī"
+                romaji: "ko-hi-"
             },
             {
                 kana: "ぎゅうにゅう",
                 kanji: "牛乳",
                 meaning: "milk",
-                romaji: "gyūnyū"
+                romaji: "gyuunyuu"
             },
             {
                 kana: "さとう",
                 kanji: "砂糖",
                 meaning: "sugar",
-                romaji: "satō"
+                romaji: "satou"
             },
             {
                 kana: "しお",
@@ -1217,7 +1217,7 @@ export module JPWords {
                 kana: "しょうゆ",
                 kanji: "醤油",
                 meaning: "soy sauce",
-                romaji: "shōyu"
+                romaji: "syouyu"
             },
             {
                 kana: "じかん",
@@ -1241,7 +1241,7 @@ export module JPWords {
                 kana: "びょう",
                 kanji: "秒",
                 meaning: "second",
-                romaji: "byō"
+                romaji: "byou"
             },
             {
                 kana: "メートル",
@@ -1265,7 +1265,7 @@ export module JPWords {
                 kana: "きょう",
                 kanji: "今日",
                 meaning: "today",
-                romaji: "kyō"
+                romaji: "kyou"
             },
             {
                 kana: "キロ",
@@ -1301,7 +1301,7 @@ export module JPWords {
                 kana: "ゆうがた",
                 kanji: "夕方",
                 meaning: "evening",
-                romaji: "yūgata"
+                romaji: "yuugata"
             },
             {
                 kana: "ばん",
@@ -1319,19 +1319,19 @@ export module JPWords {
                 kana: "ようび",
                 kanji: "曜日",
                 meaning: "~day",
-                romaji: "yōbi"
+                romaji: "youbi"
             },
             {
                 kana: "バナナ",
-                kanji: "かんしょう",
+                kanji: "",
                 meaning: "banana",
-                romaji: "banana/kanshō"
+                romaji: "banana"
             },
             {
                 kana: "げつようび",
                 kanji: "月曜日",
                 meaning: "Monday",
-                romaji: "getsu-yōbi"
+                romaji: "getsuyoubi"
             },
             {
                 kana: "ホテル",
@@ -1343,25 +1343,25 @@ export module JPWords {
                 kana: "かようび",
                 kanji: "火曜日",
                 meaning: "Tuesday",
-                romaji: "ka-yōbi"
+                romaji: "kayoubi"
             },
             {
                 kana: "すいようび",
                 kanji: "水曜日",
                 meaning: "Wednesday",
-                romaji: "sui-yōbi"
+                romaji: "suiyoubi"
             },
             {
                 kana: "もくようび",
                 kanji: "木曜日",
                 meaning: "Thursday",
-                romaji: "moku-yōbi"
+                romaji: "mokuyoubi"
             },
             {
                 kana: "きんようび",
                 kanji: "金曜日",
                 meaning: "Friday",
-                romaji: "kin-yōbi"
+                romaji: "kinyoubi"
             },
             {
                 kana: "トマト",
@@ -1373,37 +1373,37 @@ export module JPWords {
                 kana: "どようび",
                 kanji: "土曜日",
                 meaning: "Saturday",
-                romaji: "do-yōbi"
+                romaji: "doyoubi"
             },
             {
                 kana: "にちようび",
                 kanji: "日曜日",
                 meaning: "Sunday",
-                romaji: "nichi-yōbi"
+                romaji: "nichiyoubi"
             },
             {
                 kana: "しゅう",
                 kanji: "週",
                 meaning: "week",
-                romaji: "shū"
+                romaji: "shuu"
             },
             {
                 kana: "いっしゅうかん",
                 kanji: "一週間",
                 meaning: "one week",
-                romaji: "isshūkan"
+                romaji: "isshuukan"
             },
             {
                 kana: "ちょうしょく",
                 kanji: "朝食",
                 meaning: "breakfast",
-                romaji: "chōshoku/asagohan"
+                romaji: "tyoushoku"
             },
             {
                 kana: "たいよう",
                 kanji: "太陽",
                 meaning: "sun",
-                romaji: "taiyō"
+                romaji: "taiyou"
             },
             {
                 kana: "つき",
@@ -1481,7 +1481,7 @@ export module JPWords {
                 kana: "たいふう",
                 kanji: "台風",
                 meaning: "typhoon",
-                romaji: "taifū"
+                romaji: "taifuu"
             },
             {
                 kana: "あらし",
@@ -1535,7 +1535,7 @@ export module JPWords {
                 kana: "ボールペン",
                 kanji: "",
                 meaning: "ball-point pen",
-                romaji: "bōrupen"
+                romaji: "bo-rupen"
             },
             {
                 kana: "みぎ",
@@ -1547,7 +1547,7 @@ export module JPWords {
                 kana: "チョーク",
                 kanji: "",
                 meaning: "chalk",
-                romaji: "chōku"
+                romaji: "tyo-ku"
             },
             {
                 kana: "ひだり",
@@ -1571,7 +1571,7 @@ export module JPWords {
                 kana: "ノート",
                 kanji: "",
                 meaning: "notebook",
-                romaji: "nōto"
+                romaji: "no-to"
             },
             {
                 kana: "まえ",
@@ -1601,7 +1601,7 @@ export module JPWords {
                 kana: "むこう",
                 kanji: "向こう",
                 meaning: "the other side, opposite side",
-                romaji: "mukō"
+                romaji: "mukou"
             },
             {
                 kana: "こよみ",
@@ -1655,7 +1655,7 @@ export module JPWords {
                 kana: "こおり",
                 kanji: "氷",
                 meaning: "ice",
-                romaji: "kōri"
+                romaji: "kouri"
             },
             {
                 kana: "つき",
@@ -1691,7 +1691,7 @@ export module JPWords {
                 kana: "くうき",
                 kanji: "空気",
                 meaning: "air, atmosphere",
-                romaji: "kūki"
+                romaji: "kuuki"
             },
             {
                 kana: "つち",
@@ -1703,7 +1703,7 @@ export module JPWords {
                 kana: "きのう",
                 kanji: "さくじつ",
                 meaning: "yesterday",
-                romaji: "kinō/sakujitsu"
+                romaji: "kinou"
             },
             {
                 kana: "きんぞく",
@@ -1733,7 +1733,7 @@ export module JPWords {
                 kana: "どう",
                 kanji: "銅",
                 meaning: "copper [Cu]",
-                romaji: "dō"
+                romaji: "dou"
             },
             {
                 kana: "きん",
@@ -1769,7 +1769,7 @@ export module JPWords {
                 kana: "ローマ字",
                 kanji: "",
                 meaning: "Roman characters, Latin script",
-                romaji: "rōmaji"
+                romaji: "ro-maji"
             },
             {
                 kana: "センチメートル",
@@ -1805,7 +1805,7 @@ export module JPWords {
                 kana: "がっこう",
                 kanji: "学校",
                 meaning: "school",
-                romaji: "gakkō"
+                romaji: "gakkou"
             },
             {
                 kana: "やくしょ",
@@ -1829,7 +1829,7 @@ export module JPWords {
                 kana: "こうじょう",
                 kanji: "工場",
                 meaning: "factory",
-                romaji: "kōjō"
+                romaji: "koujyou"
             },
             {
                 kana: "さつ",
@@ -1847,7 +1847,7 @@ export module JPWords {
                 kana: "じどうはんばいき",
                 kanji: "自動販売機",
                 meaning: "vending machine, slot machine",
-                romaji: "jidōhanbaiki"
+                romaji: "jidouhanbaiki"
             },
             {
                 kana: "ピンク",
@@ -1907,7 +1907,7 @@ export module JPWords {
                 kana: "スポーツ",
                 kanji: "",
                 meaning: "sport",
-                romaji: "supōtsu"
+                romaji: "supo-tsu"
             },
             {
                 kana: "ふとん",
@@ -1985,13 +1985,13 @@ export module JPWords {
                 kana: "ちょうこく",
                 kanji: "彫刻",
                 meaning: "sculpture, engraving",
-                romaji: "chōkoku"
+                romaji: "tyoukoku"
             },
             {
                 kana: "ぶんぼうぐ",
                 kanji: "文房具",
                 meaning: "stationery",
-                romaji: "bunbōgu"
+                romaji: "bunbougu"
             },
             {
                 kana: "まんねんひつ",
@@ -2019,9 +2019,9 @@ export module JPWords {
             },
             {
                 kana: "あした",
-                kanji: "あす",
+                kanji: "",
                 meaning: "tomorrow",
-                romaji: "ashita/asu/myōnichi"
+                romaji: "ashita"
             },
             {
                 kana: "えんぴつけずり",
@@ -2039,7 +2039,7 @@ export module JPWords {
                 kana: "じょうぎ",
                 kanji: "定規",
                 meaning: "ruler",
-                romaji: "jōgi"
+                romaji: "jyougi"
             },
             {
                 kana: "これ",
@@ -2075,7 +2075,7 @@ export module JPWords {
                 kana: "ふうとう",
                 kanji: "封筒",
                 meaning: "envelope",
-                romaji: "fūtō"
+                romaji: "fuutou"
             },
             {
                 kana: "はさみ",
@@ -2093,7 +2093,7 @@ export module JPWords {
                 kana: "ようふく",
                 kanji: "洋服",
                 meaning: "western clothing",
-                romaji: "yōfuku"
+                romaji: "youfuku"
             },
             {
                 kana: "て",
@@ -2147,7 +2147,7 @@ export module JPWords {
                 kana: "てつどう",
                 kanji: "鉄道",
                 meaning: "railway",
-                romaji: "tetsudō"
+                romaji: "tetsudou"
             },
             {
                 kana: "えき",
@@ -2159,7 +2159,7 @@ export module JPWords {
                 kana: "ひこうき",
                 kanji: "飛行機",
                 meaning: "airplane",
-                romaji: "hikōki"
+                romaji: "hikouki"
             },
             {
                 kana: "みち",
@@ -2171,7 +2171,7 @@ export module JPWords {
                 kana: "どうろ",
                 kanji: "道路",
                 meaning: "road",
-                romaji: "dōro"
+                romaji: "douro"
             },
             {
                 kana: "バスてい",
@@ -2183,7 +2183,7 @@ export module JPWords {
                 kana: "とおり",
                 kanji: "通り",
                 meaning: "avenue",
-                romaji: "tōri"
+                romaji: "touri"
             },
             {
                 kana: "でんしゃ",
@@ -2195,7 +2195,7 @@ export module JPWords {
                 kana: "じどうしゃ",
                 kanji: "自動車",
                 meaning: "car",
-                romaji: "jidōsha"
+                romaji: "jidousha"
             },
             {
                 kana: "もじ",
@@ -2231,7 +2231,7 @@ export module JPWords {
                 kana: "すうじ",
                 kanji: "数字",
                 meaning: "numbers",
-                romaji: "sūji"
+                romaji: "suuji"
             },
             {
                 kana: "がいこくご",
@@ -2255,7 +2255,7 @@ export module JPWords {
                 kana: "ちゅうごくご",
                 kanji: "中国語",
                 meaning: "Chinese [language]",
-                romaji: "chūgokugo"
+                romaji: "tyuugokugo"
             },
             {
                 kana: "どいつご",
@@ -2417,7 +2417,7 @@ export module JPWords {
                 kana: "さんすう",
                 kanji: "算数",
                 meaning: "arithmetic",
-                romaji: "sansū"
+                romaji: "sansuu"
             },
             {
                 kana: "れきし",
@@ -2441,19 +2441,19 @@ export module JPWords {
                 kana: "じょうほう",
                 kanji: "情報",
                 meaning: "information, news",
-                romaji: "jōhō"
+                romaji: "jyouhou"
             },
             {
                 kana: "ひつよう",
                 kanji: "必要",
                 meaning: "necessity",
-                romaji: "hitsuyō"
+                romaji: "hitsuyou"
             },
             {
                 kana: "べんきょう",
                 kanji: "勉強",
                 meaning: "study",
-                romaji: "benkyō"
+                romaji: "benkyou"
             },
             {
                 kana: "いらい",
@@ -2507,7 +2507,7 @@ export module JPWords {
                 kana: "じゅう",
                 kanji: "十",
                 meaning: "ten",
-                romaji: "jū"
+                romaji: "jyuu"
             },
             {
                 kana: "ひゃく",
@@ -2591,7 +2591,7 @@ export module JPWords {
                 kana: "とお",
                 kanji: "十",
                 meaning: "ten, ten things",
-                romaji: "tō"
+                romaji: "too"
             },
             {
                 kana: "ひみつ",
@@ -2603,13 +2603,13 @@ export module JPWords {
                 kana: "じどう",
                 kanji: "自動",
                 meaning: "automatic",
-                romaji: "jidō"
+                romaji: "jidou"
             },
             {
                 kana: "ないよう",
                 kanji: "内容",
                 meaning: "content",
-                romaji: "naiyō"
+                romaji: "naiyou"
             },
             {
                 kana: "はば",
@@ -2633,7 +2633,7 @@ export module JPWords {
                 kana: "くうこう",
                 kanji: "空港",
                 meaning: "airport",
-                romaji: "kūkō/hikōjō"
+                romaji: "kuukou"
             },
             {
                 kana: "げんざい",
@@ -2699,7 +2699,7 @@ export module JPWords {
                 kana: "おおきい",
                 kanji: "大きい",
                 meaning: "big",
-                romaji: "ōkii"
+                romaji: "ookii"
             },
             {
                 kana: "ちいさい",
@@ -2717,7 +2717,7 @@ export module JPWords {
                 kana: "もう",
                 kanji: "",
                 meaning: "already",
-                romaji: "mō"
+                romaji: "mou"
             },
             {
                 kana: "ふとい",
@@ -2759,7 +2759,7 @@ export module JPWords {
                 kana: "こう",
                 kanji: "",
                 meaning: "like this",
-                romaji: "kō"
+                romaji: "kou"
             },
             {
                 kana: "わかい",
@@ -2771,7 +2771,7 @@ export module JPWords {
                 kana: "そう",
                 kanji: "",
                 meaning: "like that",
-                romaji: "sō"
+                romaji: "sou"
             },
             {
                 kana: "かるい",
@@ -2902,8 +2902,8 @@ export module JPWords {
             {
                 kana: "ちょうせんご",
                 kanji: "朝鮮語",
-                meaning: "Korean [language], South Korean [language]",
-                romaji: "chōsengo/kankokugo"
+                meaning: "Korean [language]",
+                romaji: "chousengo"
             },
             {
                 kana: "おいしい",
@@ -3535,11 +3535,11 @@ export module JPWords {
                 meaning: "to become dry",
                 romaji: "kawaku"
             },
-            {
+            { //TODO
                 kana: "きゅう/く",
                 kanji: "九",
                 meaning: "nine",
-                romaji: "kyū/ku"
+                romaji: "kyuu/ku"
             },
             {
                 kana: "みだす",
@@ -4018,8 +4018,8 @@ export module JPWords {
             {
                 kana: "そうだ",
                 kanji: "",
-                meaning: "indicates that it seems the verb occurs [e.g., \"It seems he ate\"]",
-                romaji: "sōda"
+                meaning: "it seems the verb occurs [\"It seems he ate\"]",
+                romaji: "souda"
             },
             {
                 kana: "また",
@@ -4037,7 +4037,7 @@ export module JPWords {
                 kana: "だろう",
                 kanji: "",
                 meaning: "indicates that it seems the verb occurs; also used to ask whether the verb occurs",
-                romaji: "darō"
+                romaji: "darou"
             },
             {
                 kana: "くらい",
