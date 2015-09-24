@@ -3,10 +3,10 @@ export module JPChars {
         romaji: string;
         kana: string;
     }
-    export class Hirigana {
+    export class All {
         public static random():JPChar {
-            var i = Math.floor(Math.random() * Hirigana.chars.length);
-            return Hirigana.chars[i];
+            var i = Math.floor(Math.random() * All.chars.length);
+            return All.chars[i];
         }
 
         public static chars:JPChar[] = [
@@ -38,6 +38,7 @@ export module JPChars {
             {romaji: "ta", kana: "た"},
             {romaji: "chi", kana: "ち"},
             {romaji: "tsu", kana: "つ"},
+            {romaji: "ltsu", kana: "っ"},
             {romaji: "te", kana: "て"},
             {romaji: "to", kana: "と"},
             {romaji: "cha", kana: "ちゃ"},
@@ -74,6 +75,9 @@ export module JPChars {
             {romaji: "ya", kana: "や"},
             {romaji: "yu", kana: "ゆ"},
             {romaji: "yo", kana: "よ"},
+            {romaji: "lya", kana: "ゃ"},
+            {romaji: "lyu", kana: "ゅ"},
+            {romaji: "lyo", kana: "ょ"},
             //r
             {romaji: "ra", kana: "ら"},
             {romaji: "ri", kana: "り"},
@@ -87,7 +91,7 @@ export module JPChars {
             {romaji: "wa", kana: "わ"},
             {romaji: "wo", kana: "を"},
             //n
-            {romaji: "n", kana: "ん"},
+            {romaji: "n'", kana: "ん"},
             //g
             {romaji: "ga", kana: "が"},
             {romaji: "gi", kana: "ぎ"},
@@ -130,9 +134,131 @@ export module JPChars {
             {romaji: "pya", kana: "ぴゃ"},
             {romaji: "pyu", kana: "ぴゅ"},
             {romaji: "pyo", kana: "ぴょ"},
+            ////KATAKANA////
+            //a
+            {romaji: "A", kana: "ア"},
+            {romaji: "I", kana: "イ"},
+            {romaji: "U", kana: "ウ"},
+            {romaji: "E", kana: "エ"},
+            {romaji: "O", kana: "オ"},
+            //k
+            {romaji: "KA", kana: "カ"},
+            {romaji: "KI", kana: "キ"},
+            {romaji: "KU", kana: "ク"},
+            {romaji: "KE", kana: "ケ"},
+            {romaji: "KO", kana: "コ"},
+            {romaji: "YA", kana: "キャ"},
+            {romaji: "YU", kana: "キュ"},
+            {romaji: "YO", kana: "キョ"},
+            //s
+            {romaji: "SA", kana: "サ"},
+            {romaji: "SHI", kana: "シ"},
+            {romaji: "SU", kana: "ス"},
+            {romaji: "SE", kana: "セ"},
+            {romaji: "SO", kana: "ソ"},
+            {romaji: "SHA", kana: "シャ"},
+            {romaji: "SHU", kana: "シュ"},
+            {romaji: "SHO", kana: "ショ"},
+            //t
+            {romaji: "TA", kana: "タ"},
+            {romaji: "CHI", kana: "チ"},
+            {romaji: "TSU", kana: "ツ"},
+            {romaji: "LTSU", kana: "ッ"},
+            {romaji: "TE", kana: "テ"},
+            {romaji: "TO", kana: "ト"},
+            {romaji: "CHA", kana: "チャ"},
+            {romaji: "CHU", kana: "チュ"},
+            {romaji: "CHO", kana: "チョ"},
+            //n
+            {romaji: "NA", kana: "ナ"},
+            {romaji: "NI", kana: "ニ"},
+            {romaji: "NU", kana: "ヌ"},
+            {romaji: "NE", kana: "ネ"},
+            {romaji: "NO", kana: "ノ"},
+            {romaji: "NYA", kana: "ニャ"},
+            {romaji: "NYU", kana: "ニュ"},
+            {romaji: "NYO", kana: "ニョ"},
+            //h
+            {romaji: "HA", kana: "ナ"},
+            {romaji: "HI", kana: "ニ"},
+            {romaji: "FU", kana: "ヌ"},
+            {romaji: "HE", kana: "ネ"},
+            {romaji: "HO", kana: "ノ"},
+            {romaji: "HYA", kana: "ニャ"},
+            {romaji: "HYU", kana: "ニュ"},
+            {romaji: "HYO", kana: "ニョ"},
+            //m
+            {romaji: "MA", kana: "マ"},
+            {romaji: "MI", kana: "ミ"},
+            {romaji: "MU", kana: "ム"},
+            {romaji: "ME", kana: "メ"},
+            {romaji: "MO", kana: "モ"},
+            {romaji: "MYA", kana: "ミャ"},
+            {romaji: "MYU", kana: "ミュ"},
+            {romaji: "MYO", kana: "ミョ"},
+            //y
+            {romaji: "YA", kana: "ヤ"},
+            {romaji: "YU", kana: "ユ"},
+            {romaji: "YO", kana: "ヨ"},
+            //r
+            {romaji: "RA", kana: "ラ"},
+            {romaji: "RI", kana: "リ"},
+            {romaji: "RU", kana: "ル"},
+            {romaji: "RE", kana: "レ"},
+            {romaji: "RO", kana: "ロ"},
+            {romaji: "RYA", kana: "リャ"},
+            {romaji: "RYU", kana: "リュ"},
+            {romaji: "RYO", kana: "リョ"},
+            //w
+            {romaji: "WA", kana: "ワ"},
+            {romaji: "WO", kana: "ヲ"},
+            //g
+            {romaji: "GA", kana: "ガ"},
+            {romaji: "GI", kana: "ギ"},
+            {romaji: "GU", kana: "グ"},
+            {romaji: "GE", kana: "ゲ"},
+            {romaji: "GO", kana: "ゴ"},
+            {romaji: "GYA", kana: "ギャ"},
+            {romaji: "GYU", kana: "ギュ"},
+            {romaji: "GYO", kana: "ギョ"},
+            //z
+            {romaji: "ZA", kana: "ザ"},
+            {romaji: "JI", kana: "ジ"},
+            {romaji: "ZU", kana: "ズ"},
+            {romaji: "ZE", kana: "ゼ"},
+            {romaji: "ZO", kana: "ゾ"},
+            {romaji: "JA", kana: "ジャ"},
+            {romaji: "JU", kana: "ジュ"},
+            {romaji: "JO", kana: "ジョ"},
+            //d
+            {romaji: "DA", kana: "ダ"},
+            {romaji: "DI", kana: "ヂ"}, //also ji, but can't be typed as so
+            {romaji: "DU", kana: "ヅ"}, //also zu
+            {romaji: "DE", kana: "ド"},
+            {romaji: "DO", kana: "ド"},
+            {romaji: "DYA", kana: "ヂャ"}, //also ja
+            {romaji: "DYU", kana: "ヂュ"}, //also ju
+            {romaji: "DYO", kana: "ヂョ"}, //also jo
+            //b
+            {romaji: "BA", kana: "バ"},
+            {romaji: "BI", kana: "ビ"},
+            {romaji: "BU", kana: "ブ"},
+            {romaji: "BE", kana: "ベ"},
+            {romaji: "BO", kana: "ボ"},
+            {romaji: "BYA", kana: "ビャ"},
+            {romaji: "BYU", kana: "ビュ"},
+            {romaji: "BYO", kana: "ビョ"},
+            //p
+            {romaji: "PA", kana: "パ"},
+            {romaji: "PI", kana: "ピ"},
+            {romaji: "PU", kana: "プ"},
+            {romaji: "PE", kana: "ペ"},
+            {romaji: "PO", kana: "ポ"},
+            {romaji: "PYA", kana: "ピャ"},
+            {romaji: "PYU", kana: "ピュ"},
+            {romaji: "PYO", kana: "ピョ"},
+            //n
+            {romaji: "N'", kana: "パ"},
         ]
-    }
-    export class All {
-        public static chars:JPChar[] = Hirigana.chars;
     }
 }

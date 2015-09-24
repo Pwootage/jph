@@ -50,7 +50,7 @@ export class JPHHiriganaComponent {
         while (this.chars.length < 10) {
             var char;
             do {
-                char = JPChars.Hirigana.random()
+                char = JPChars.All.random()
             } while (!this.charEnabled(char) || (this.chars.length > 0 && (char.kana == this.chars[this.chars.length - 1].kana)));
             this.chars.push(char);
         }

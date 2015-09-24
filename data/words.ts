@@ -993,7 +993,7 @@ export module JPWords {
             },
             {
                 kana: "ね",
-                kanji: "ねっこ",
+                kanji: "",
                 meaning: "root",
                 romaji: "ne or nekko"
             },
