@@ -234,7 +234,7 @@ export module JPChars {
             {romaji: "DA", kana: "ダ"},
             {romaji: "DI", kana: "ヂ"}, //also ji, but can't be typed as so
             {romaji: "DU", kana: "ヅ"}, //also zu
-            {romaji: "DE", kana: "ド"},
+            {romaji: "DE", kana: "デ"},
             {romaji: "DO", kana: "ド"},
             {romaji: "DYA", kana: "ヂャ"}, //also ja
             {romaji: "DYU", kana: "ヂュ"}, //also ju
