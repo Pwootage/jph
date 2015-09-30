@@ -258,7 +258,7 @@ export module JPChars {
             {romaji: "PYU", kana: "ピュ"},
             {romaji: "PYO", kana: "ピョ"},
             //n
-            {romaji: "N'", kana: "パ"},
+            {romaji: "N'", kana: "ン"},
         ]
     }
 }

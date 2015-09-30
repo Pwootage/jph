@@ -68,6 +68,10 @@ jph-hirigana .kana-queue .char-card div {
 }
 jph-hirigana jph-hirigana-table {
   display: inline-flex;
+  flex-direction: column;
+}
+jph-hirigana jph-hirigana-table .row-wrapper {
+  display: flex;
   flex-direction: row;
 }
 jph-hirigana .what-to-do-inp {
